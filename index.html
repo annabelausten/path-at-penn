@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Path@Penn - Course Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="phone-container">
+    <div class="phone-screen">
+
+      <!-- top status bar thing -->
+      <div class="status-bar">
+        <div class="time">9:41</div>
+        <div class="battery">
+          <span>100%</span>
+          <span>Battery</span>
+        </div>
+      </div>
+    
+      <!-- schedule section -->
+      <section class="schedule-grid-container">
+        <h2 class="schedule-title">Weekly Schedule</h2>
+
+        <div class="calendar-schedule">
+          <!-- weekdays row -->
+          <div class="calendar-header">
+            <div class="time-col"></div>
+            <div class="day-col">Mon</div>
+            <div class="day-col">Tue</div>
+            <div class="day-col">Wed</div>
+            <div class="day-col">Thu</div>
+            <div class="day-col">Fri</div>
+          </div>
+
+          <!-- the body with times -->
+          <div class="calendar-body">
+            <div class="time-row">
+              <div class="time-col">8 AM</div>
+              <div class="day-cell"></div><div class="day-cell"></div>
+              <div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div>
+            </div>
+
+            <div class="time-row">
+              <div class="time-col">9 AM</div>
+              <div class="day-cell"></div><div class="day-cell"></div>
+              <div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div>
+            </div>
+
+            <div class="time-row">
+              <div class="time-col">10 AM</div>
+              <div class="day-cell"><div class="class-block">PHIL 3000<br>10:00–11:00</div></div>
+              <div class="day-cell"></div>
+              <div class="day-cell"><div class="class-block">PHIL 3000<br>10:00–11:00</div></div>
+              <div class="day-cell"></div><div class="day-cell"></div>
+            </div>
+
+            <div class="time-row">
+              <div class="time-col">11 AM</div>
+              <div class="day-cell"></div><div class="day-cell"></div>
+              <div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div>
+            </div>
+
+            <div class="time-row">
+              <div class="time-col">12 PM</div>
+              <div class="day-cell"><div class="class-block">CIS 1200<br>12:00–1:00</div></div>
+              <div class="day-cell"></div>
+              <div class="day-cell"><div class="class-block">CIS 1200<br>12:00–1:00</div></div>
+              <div class="day-cell"></div><div class="day-cell"></div>
+            </div>
+
+            <div class="time-row">
+              <div class="time-col">1 PM</div>
+              <div class="day-cell"></div>
+              <div class="day-cell"><div class="class-block">ECON 0100<br>1:00–2:00</div></div>
+              <div class="day-cell"></div>
+              <div class="day-cell"><div class="class-block">ECON 0100<br>1:00–2:00</div></div>
+              <div class="day-cell"></div>
+            </div>
+
+            <div class="time-row">
+              <div class="time-col">2 PM</div>
+              <div class="day-cell"></div><div class="day-cell"></div>
+              <div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div>
+            </div>
+
+            <div class="time-row">
+              <div class="time-col">3 PM</div>
+              <div class="day-cell"></div><div class="day-cell"></div>
+              <div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div>
+            </div>
+
+            <div class="time-row">
+              <div class="time-col">4 PM</div>
+              <div class="day-cell"></div><div class="day-cell"></div>
+              <div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div>
+            </div>
+
+            <div class="time-row">
+              <div class="time-col">5 PM</div>
+              <div class="day-cell"></div><div class="day-cell"></div>
+              <div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- filter + search section -->
+    <div class="filter-tabs">
+      <!-- search bar on the left -->
+      <div class="filter-search">
+        <input type="text" placeholder="Search courses...">
+      </div>
+
+      <!-- buttons on the right -->
+      <div class="filter-buttons">
+        <button class="filter-tab active">All</button>
+        <button class="filter-tab">Pinned</button>
+        <button class="filter-tab">Enrolled</button>
+      </div>
+    </div>
+
+      <!-- list of courses -->
+      <main class="course-list">
+
+        <!-- CIS 1200 -->
+        <div class="course-card">
+          <div class="course-header">
+            <div class="course-code">CIS 1200 <span class="pin-btn">☆</span></div>
+            <div class="seats-info">
+              <div class="seats-badge seats-available">12 spots</div>
+            </div>
+          </div>
+          <div class="course-title">Programming Languages I</div>
+          <div class="course-meta">
+            <div class="meta-item"><b>Days:</b> Mon/Wed</div>
+            <div class="meta-item"><b>Time:</b> 12:00–1:00</div>
+            <div class="meta-item"><b>Prof:</b> Prof. B</div>
+          </div>
+          <div class="course-actions">
+            <button class="btn btn-primary btn-enrolled">Enrolled</button>
+            <button class="btn btn-secondary">Info</button>
+          </div>
+        </div>
+
+        <!-- CIS 1600 -->
+        <div class="course-card">
+          <div class="course-header">
+            <div class="course-code">CIS 1600 <span class="pin-btn">☆</span></div>
+            <div class="seats-info">
+              <div class="seats-badge seats-full">Full</div>
+              <div class="waitlist-info">15 on waitlist</div>
+            </div>
+          </div>
+          <div class="course-title">Mathematical Foundations of CS</div>
+          <div class="course-meta">
+            <div class="meta-item"><b>Days:</b> Tue/Thu</div>
+            <div class="meta-item"><b>Time:</b> 10:30–12:00</div>
+            <div class="meta-item"><b>Prof:</b> Prof. D</div>
+          </div>
+          <div class="course-actions">
+            <button class="btn btn-primary">Join Waitlist</button>
+            <button class="btn btn-secondary">Info</button>
+          </div>
+        </div>
+
+        <!-- CIS 2400 pinned -->
+        <div class="course-card pinned">
+          <div class="course-header">
+            <div class="course-code">CIS 2400 <span class="pin-btn">★</span></div>
+            <div class="seats-info">
+              <div class="seats-badge seats-available">25 spots</div>
+            </div>
+          </div>
+          <div class="course-title">Computer Architecture</div>
+          <div class="course-meta">
+            <div class="meta-item"><b>Days:</b> Mon/Wed</div>
+            <div class="meta-item"><b>Time:</b> 2:00–3:30</div>
+            <div class="meta-item"><b>Prof:</b> Prof. E</div>
+          </div>
+          <div class="course-actions">
+            <button class="btn btn-pinned">Pinned</button>
+            <button class="btn btn-secondary">Info</button>
+          </div>
+        </div>
+
+        <!-- PHIL 3000 -->
+        <div class="course-card">
+          <div class="course-header">
+            <div class="course-code">PHIL 3000 <span class="pin-btn">☆</span></div>
+            <div class="seats-info">
+              <div class="seats-badge seats-available">17 spots</div>
+            </div>
+          </div>
+          <div class="course-title">Modern Philosophy</div>
+          <div class="course-meta">
+            <div class="meta-item"><b>Days:</b> Mon/Wed</div>
+            <div class="meta-item"><b>Time:</b> 10:00–11:00</div>
+            <div class="meta-item"><b>Prof:</b> Prof. A</div>
+          </div>
+          <div class="course-actions">
+            <button class="btn btn-primary btn-enrolled">Enrolled</button>
+            <button class="btn btn-secondary">Info</button>
+          </div>
+        </div>
+
+        <!-- ECON 0200 pinned -->
+        <div class="course-card pinned">
+          <div class="course-header">
+            <div class="course-code">ECON 0200 <span class="pin-btn">☆</span></div>
+            <div class="seats-info">
+              <div class="seats-badge seats-available">42 spots</div>
+            </div>
+          </div>
+          <div class="course-title">Intro to Macroeconomics</div>
+          <div class="course-meta">
+            <div class="meta-item"><b>Days:</b> Tue/Thu</div>
+            <div class="meta-item"><b>Time:</b> 5:00–6:00</div>
+            <div class="meta-item"><b>Prof:</b> Prof. C</div>
+          </div>
+          <div class="course-actions">
+            <button class="btn btn-primary">Enroll</button>
+            <button class="btn btn-secondary">Info</button>
+          </div>
+        </div>
+      </main>
+
+      <!-- bottom bar -->
+      <div class="cart-bar">
+        <div class="cart-info">
+          <span>3 courses • 3.0 credits</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
